@@ -1,4 +1,4 @@
--- Census Database Schema
+-- Canary Database Schema
 -- Run this in your Supabase SQL Editor
 
 -- Enable necessary extensions

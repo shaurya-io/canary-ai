@@ -114,7 +114,7 @@ export default function ParticipantDetailPage() {
     lines.push('');
 
     transcript.messages.forEach((message) => {
-      const role = message.role === 'agent' ? 'Census' : 'Participant';
+      const role = message.role === 'agent' ? 'Canary' : 'Participant';
       lines.push(`[${role}]`);
       lines.push(message.content);
       lines.push('');
@@ -221,7 +221,7 @@ export default function ParticipantDetailPage() {
 
       // Messages
       transcript?.messages?.forEach((message) => {
-        const role = message.role === 'agent' ? 'Census' : 'Participant';
+        const role = message.role === 'agent' ? 'Canary' : 'Participant';
         children.push(new Paragraph({
           children: [
             new TextRun({
@@ -385,7 +385,7 @@ export default function ParticipantDetailPage() {
 
       // Messages
       transcript?.messages?.forEach((message) => {
-        const role = message.role === 'agent' ? 'Census' : 'Participant';
+        const role = message.role === 'agent' ? 'Canary' : 'Participant';
         const roleColor: [number, number, number] = message.role === 'agent' ? [16, 185, 129] : [113, 113, 122];
 
         addText(`[${role}]`, { bold: true, size: 10, color: roleColor });
@@ -571,7 +571,7 @@ export default function ParticipantDetailPage() {
                           <span className={`text-sm font-medium ${
                             message.role === 'agent' ? 'text-[#0D9373]' : 'text-white'
                           }`}>
-                            {message.role === 'agent' ? 'Census' : 'Participant'}
+                            {message.role === 'agent' ? 'Canary' : 'Participant'}
                           </span>
                         </div>
                         <p className="text-sm text-white leading-relaxed">

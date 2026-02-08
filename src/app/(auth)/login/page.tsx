@@ -99,7 +99,7 @@ export default function LoginPage() {
               <div className="w-8 h-8 rounded-lg bg-[#0A0A0A] flex items-center justify-center">
                 <FileText className="w-4 h-4 text-white" />
               </div>
-              <span className="text-xl font-bold text-[#09090B] tracking-tight">Census</span>
+              <span className="text-xl font-bold text-[#09090B] tracking-tight">Canary</span>
             </Link>
           </div>
 
@@ -109,7 +109,7 @@ export default function LoginPage() {
               {isLogin ? 'Welcome back' : 'Create your account'}
             </h1>
             <p className="text-[15px] text-[#6B7280] mb-8">
-              {isLogin ? 'Sign in to your account to continue' : 'Get started with Census for free'}
+              {isLogin ? 'Sign in to your account to continue' : 'Get started with Canary for free'}
             </p>
 
             {/* Google OAuth */}

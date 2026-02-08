@@ -18,7 +18,7 @@ export default function SettingsPage() {
         <div className="p-6 border-b border-[#E5E7EB]">
           <h2 className="text-lg font-semibold text-[#09090B]">Appearance</h2>
           <p className="text-[14px] text-[#6B7280] mt-1">
-            Customize how Census looks on your device
+            Customize how Canary looks on your device
           </p>
         </div>
         <div className="p-6">

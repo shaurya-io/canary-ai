@@ -38,7 +38,7 @@ export function DashboardNav({ user }: DashboardNavProps) {
               <FileText className="w-4 h-4 text-white" />
             </div>
             <span className="text-xl font-bold text-[#09090B] tracking-tight">
-              Census
+              Canary
             </span>
           </Link>
 

@@ -7,7 +7,7 @@ export default function LandingPage() {
       {/* Announcement Bar */}
       <div className="bg-[#0A0A0A] text-white py-3 px-6">
         <div className="max-w-7xl mx-auto flex items-center justify-center gap-2 text-sm">
-          <span className="text-[#A3A3A3]">Census is backed by</span>
+          <span className="text-[#A3A3A3]">Canary is backed by</span>
           <span className="font-semibold">Y Combinator</span>
           <span className="text-[#525252]">•</span>
           <span className="text-[#A3A3A3]">Anthropic</span>
@@ -27,7 +27,7 @@ export default function LandingPage() {
                 <div className="w-8 h-8 rounded-lg bg-[#0A0A0A] flex items-center justify-center">
                   <FileText className="w-4 h-4 text-white" />
                 </div>
-                <span className="text-xl font-bold text-[#09090B]">Census</span>
+                <span className="text-xl font-bold text-[#09090B]">Canary</span>
               </Link>
 
               <nav className="hidden md:flex items-center gap-1">
@@ -224,7 +224,7 @@ export default function LandingPage() {
               User research and synthesis are eating your teams alive.
             </h2>
             <p className="mt-6 text-xl text-[#6B7280] max-w-2xl mx-auto">
-              Stop switching between a dozen different tools. Census brings interviews, analysis, and insights into a single AI-powered platform.
+              Stop switching between a dozen different tools. Canary brings interviews, analysis, and insights into a single AI-powered platform.
             </p>
           </div>
 
@@ -281,7 +281,7 @@ export default function LandingPage() {
                     <FileText className="w-4 h-4 text-white" />
                   </div>
                   <div className="flex-1">
-                    <p className="font-medium text-[#09090B]">Census</p>
+                    <p className="font-medium text-[#09090B]">Canary</p>
                     <div className="mt-2 bg-[#F9FAFB] border border-[#E5E7EB] rounded-xl p-4">
                       <p className="text-sm text-[#374151]">
                         What specifically about the onboarding process felt confusing?
@@ -480,7 +480,7 @@ export default function LandingPage() {
             <SetupStep
               number="01"
               title="Define your goals"
-              description="Tell Census what you want to learn. AI generates tailored interview questions."
+              description="Tell Canary what you want to learn. AI generates tailored interview questions."
             />
             <SetupStep
               number="02"
@@ -550,7 +550,7 @@ export default function LandingPage() {
               Ready to transform your user research?
             </h2>
             <p className="mt-4 text-lg text-[#A3A3A3]">
-              Schedule a demo and see how Census can help your team get 3x more insights while saving hours.
+              Schedule a demo and see how Canary can help your team get 3x more insights while saving hours.
             </p>
 
             <div className="mt-10 max-w-md mx-auto">
@@ -570,7 +570,7 @@ export default function LandingPage() {
             </div>
 
             <p className="mt-4 text-sm text-[#525252]">
-              By clicking "Get started", you agree to the use of your data in accordance with Census's{' '}
+              By clicking "Get started", you agree to the use of your data in accordance with Canary's{' '}
               <Link href="#" className="text-[#A3A3A3] underline">Privacy Notice</Link>.
             </p>
           </div>
@@ -586,7 +586,7 @@ export default function LandingPage() {
                 <div className="w-8 h-8 rounded-lg bg-[#0A0A0A] flex items-center justify-center">
                   <FileText className="w-4 h-4 text-white" />
                 </div>
-                <span className="text-xl font-bold text-[#09090B]">Census</span>
+                <span className="text-xl font-bold text-[#09090B]">Canary</span>
               </div>
 
               <div className="max-w-xs">
@@ -600,8 +600,8 @@ export default function LandingPage() {
                     Subscribe
                   </button>
                 </div>
-                <Link href="mailto:hello@census.ai" className="text-sm text-[#6B7280] hover:text-[#F97316]">
-                  hello@census.ai
+                <Link href="mailto:hello@canary.ai" className="text-sm text-[#6B7280] hover:text-[#F97316]">
+                  hello@canary.ai
                 </Link>
               </div>
             </div>
@@ -637,7 +637,7 @@ export default function LandingPage() {
 
           <div className="pt-8 border-t border-[#E5E7EB] flex items-center justify-between">
             <span className="text-sm text-[#6B7280]">
-              &copy; {new Date().getFullYear()} Census. All rights reserved.
+              &copy; {new Date().getFullYear()} Canary. All rights reserved.
             </span>
             <div className="flex items-center gap-4">
               <Link href="#" className="text-[#6B7280] hover:text-[#09090B]">

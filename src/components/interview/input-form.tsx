@@ -62,7 +62,7 @@ export function InterviewInputForm({ onSubmit, initialData, isEditing, onSkipToE
         <p className="text-[#6B7280] text-[15px] mt-1">
           {isEditing
             ? 'Update interview settings and regenerate questions if needed'
-            : 'Describe what you want to learn and Census will generate questions'}
+            : 'Describe what you want to learn and Canary will generate questions'}
         </p>
       </div>
 

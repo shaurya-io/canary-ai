@@ -11,14 +11,14 @@ interface ThemeContextType {
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
-const STORAGE_KEY = 'census-theme';
+const STORAGE_KEY = 'canary-theme';
 
 // Migrate old theme key
-if (typeof window !== 'undefined' && !localStorage.getItem('census-theme')) {
-  const oldValue = localStorage.getItem('canary-theme');
+if (typeof window !== 'undefined' && !localStorage.getItem('canary-theme')) {
+  const oldValue = localStorage.getItem('census-theme');
   if (oldValue) {
-    localStorage.setItem('census-theme', oldValue);
-    localStorage.removeItem('canary-theme');
+    localStorage.setItem('canary-theme', oldValue);
+    localStorage.removeItem('census-theme');
   }
 }
 

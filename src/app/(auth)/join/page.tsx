@@ -104,7 +104,7 @@ function JoinContent() {
         {/* Logo */}
         <div className="text-center mb-8">
           <h1 className="text-3xl font-mono font-bold text-[#0D9373]">
-            {'>'} census_
+            {'>'} canary_
           </h1>
           <p className="text-[#A1A1AA] text-sm mt-2">
             You&apos;ve been invited to an interview

@@ -24,7 +24,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Census - Intelligent User Interviews",
+  title: "Canary - Intelligent User Interviews",
   description: "Agentic text-based interviews for product teams.",
   icons: {
     icon: '/favicon.ico',

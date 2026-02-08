@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Census is an agentic text-based interview tool for product teams. Authors create adaptive interviews; participants complete them via shareable links. Built with Next.js 16 App Router, Supabase, and Claude Sonnet 4.
+Canary is an agentic text-based interview tool for product teams. Authors create adaptive interviews; participants complete them via shareable links. Built with Next.js 16 App Router, Supabase, and Claude Sonnet 4.
 
 ## Commands
 
@@ -62,7 +62,7 @@ All use `claude-sonnet-4-20250514` model. Responses are non-streaming — thinki
 - Pages in `(dashboard)/` are Server Components (fetch data, check auth)
 - Interactive UIs use `'use client'` — interview experience, forms, drag-drop editor
 - No SSE/streaming: full responses displayed when ready
-- `ThemeProvider` in `src/lib/theme-provider.tsx` manages dark/light mode via localStorage (key: `census-theme`)
+- `ThemeProvider` in `src/lib/theme-provider.tsx` manages dark/light mode via localStorage (key: `canary-theme`)
 
 ### Key Types
 

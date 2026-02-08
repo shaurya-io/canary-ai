@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Canary
+
+AI-powered interview platform that enables product teams to conduct intelligent, adaptive user interviews at scale. Uses Claude AI to ask follow-up questions, dig deeper on interesting responses, and generate insights automatically.
+
+## Tech Stack
+
+- **Frontend**: Next.js 16 (App Router), React 19
+- **Backend**: TypeScript/Node.js API routes
+- **Database**: Supabase (PostgreSQL + Auth + RLS)
+- **AI**: Claude Sonnet 4 via Anthropic SDK
+- **Styling**: Tailwind CSS 4
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The app runs at [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Environment Variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create a `.env.local` file (see `.env.local.example`):
 
-## Learn More
+```
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
+ANTHROPIC_API_KEY=
+```
 
-To learn more about Next.js, take a look at the following resources:
+Optional:
+```
+SUPABASE_SERVICE_ROLE_KEY=
+NEXT_PUBLIC_APP_URL=
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Database Setup
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Run `supabase/schema.sql` in your Supabase SQL Editor to create tables, RLS policies, and triggers.
 
-## Deploy on Vercel
+## Features
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Interview Creation** — Three-phase plan mode: define goals, AI generates categorized questions, drag-drop editing
+- **Agentic Mode** — AI dynamically generates follow-up questions based on participant responses, ensures must-cover topics are addressed, paces to time limit
+- **Scripted Mode** — Fixed question order, no dynamic follow-ups
+- **Edit & Duplicate** — Edit all fields after creation (any status), clone interviews as templates
+- **Participant Experience** — Shareable links, magic link auth, one question at a time, AI suggestions, session persistence
+- **Analytics** — Per-participant summaries (30-40 word bulleted format), key themes, sentiment, notable quotes, actionable insights
+- **Export** — Transcripts in TXT, DOCX, PDF (without AI reasoning traces)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Scripts
+
+```bash
+npm run dev      # Development server
+npm run build    # Production build
+npm run start    # Production server
+npm run lint     # ESLint
+```

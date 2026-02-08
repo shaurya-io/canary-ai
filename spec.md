@@ -1,11 +1,11 @@
-# Census - Product Specification
+# Canary - Product Specification
 
 **Version:** 1.5
 **Last Updated:** January 6, 2026
 
 ## Overview
 
-Census is an AI-powered interview tool that enables product teams to conduct intelligent, adaptive user interviews at scale. The platform uses Claude AI to ask follow-up questions, dig deeper on interesting responses, and generate insights automatically.
+Canary is an AI-powered interview tool that enables product teams to conduct intelligent, adaptive user interviews at scale. The platform uses Claude AI to ask follow-up questions, dig deeper on interesting responses, and generate insights automatically.
 
 ---
 
@@ -103,7 +103,7 @@ Authors can create interviews with the following configuration options:
 
 **Transcript Display (Author Dashboard):**
 - Full conversation history
-- Role labels: "Census" (AI) and "Participant"
+- Role labels: "Canary" (AI) and "Participant"
 - Clean display without internal reasoning traces (hidden from author view)
 - Note: Reasoning traces ARE visible to participants during the live interview for transparency, but hidden from author-facing transcript views
 
@@ -241,7 +241,6 @@ analytics_cache
 ## Version History
 
 ### v1.5 (January 2026)
-- Platform renamed from Canary to Census
 - Edit interview feature (all fields, any status)
 - Duplicate interview feature
 - Shorter bulleted summary format (30-40 words)
